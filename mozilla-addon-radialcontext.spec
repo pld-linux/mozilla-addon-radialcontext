@@ -1,5 +1,5 @@
 %define		_realname	radialcontext
-Summary:	A radial context menu for Mozilla 
+Summary:	A radial context menu for Mozilla
 Summary(pl):	Menu kontekstowe dla mozilli
 Name:		mozilla-addon-%{_realname}
 Version:	1.0
@@ -8,7 +8,7 @@ License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.radialthinking.de/radialcontext/RadialContext.xpi
 # Source0-md5:	9727c912580f062106f5b60de04c4331
-Source1:        %{_realname}-installed-chrome.txt
+Source1:	%{_realname}-installed-chrome.txt
 URL:		http://www.radialthinking.de/radialcontext/
 BuildRequires:	unzip
 BuildRequires:	zip
@@ -17,7 +17,7 @@ Requires:	mozilla >= 1.0-7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
-%define         _chromedir      %{_datadir}/mozilla/chrome
+%define		_chromedir	%{_datadir}/mozilla/chrome
 
 %description
 The RadialContext menu is a hierarchical, context-sensitive pie
