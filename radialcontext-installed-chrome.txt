@@ -1,0 +1,6 @@
+content,install,url,jar:resource:/chrome/radialcontext.jar!/content/
+locale,install,url,jar:resource:/chrome/radialcontext.jar!/locale/de-AT/radialcontext/
+locale,install,url,jar:resource:/chrome/radialcontext.jar!/locale/fr-FR/radialcontext/
+locale,install,url,jar:resource:/chrome/radialcontext.jar!/locale/it-IT/radialcontext/
+locale,install,url,jar:resource:/chrome/radialcontext.jar!/locale/pl-PL/radialcontext/
+locale,install,url,jar:resource:/chrome/radialcontext.jar!/locale/en-US/radialcontext/
