@@ -26,7 +26,12 @@ context menu and mouse gestures. The feeling is very similar to
 mouse gestures. But there also is a GUI so you don't have to look
 up what options are available in the given context.
 
-
+%description -l pl
+RadialContext stanowi hierarchiczne, zale¿ne od kontekstu okr±g³e menu
+dla mozilli. Stanowi alternatywê zarówno dla zwyk³ego menu
+kontekstowego, jak i dla ruchów myszki. Odczucia s± bardzo podobne do
+ruchów myszki. Ale jest jeszcze interfejs graficzny (GUI), wiêc nie ma
+potrzeby sprawdzania, które opcjê s± dostêpne w danym kontek¶cie.
 
 %prep
 %setup -q -c %{name}-%{version}
