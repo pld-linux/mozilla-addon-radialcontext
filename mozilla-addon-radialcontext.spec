@@ -1,6 +1,6 @@
-%define		_realname	radialcontext
 Summary:	A radial context menu for Mozilla
 Summary(pl):	Menu kontekstowe dla mozilli
+%define		_realname	radialcontext
 Name:		mozilla-addon-%{_realname}
 Version:	1.0
 Release:	2
