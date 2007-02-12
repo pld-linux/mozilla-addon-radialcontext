@@ -1,5 +1,5 @@
 Summary:	A radial context menu for Mozilla
-Summary(pl):	Menu kontekstowe dla mozilli
+Summary(pl.UTF-8):   Menu kontekstowe dla mozilli
 %define		_realname	radialcontext
 Name:		mozilla-addon-%{_realname}
 Version:	1.0
@@ -27,12 +27,12 @@ context menu and mouse gestures. The feeling is very similar to
 mouse gestures. But there also is a GUI so you don't have to look
 up what options are available in the given context.
 
-%description -l pl
-RadialContext stanowi hierarchiczne, zale¿ne od kontekstu okr±g³e menu
-dla mozilli. Stanowi alternatywê zarówno dla zwyk³ego menu
-kontekstowego, jak i dla ruchów myszki. Odczucia s± bardzo podobne do
-ruchów myszki. Ale jest jeszcze interfejs graficzny (GUI), wiêc nie ma
-potrzeby sprawdzania, które opcjê s± dostêpne w danym kontek¶cie.
+%description -l pl.UTF-8
+RadialContext stanowi hierarchiczne, zaleÅ¼ne od kontekstu okrÄ…gÅ‚e menu
+dla mozilli. Stanowi alternatywÄ™ zarÃ³wno dla zwykÅ‚ego menu
+kontekstowego, jak i dla ruchÃ³w myszki. Odczucia sÄ… bardzo podobne do
+ruchÃ³w myszki. Ale jest jeszcze interfejs graficzny (GUI), wiÄ™c nie ma
+potrzeby sprawdzania, ktÃ³re opcjÄ™ sÄ… dostÄ™pne w danym kontekÅ›cie.
 
 %prep
 %setup -q -c
