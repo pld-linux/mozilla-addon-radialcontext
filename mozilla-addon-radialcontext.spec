@@ -1,5 +1,5 @@
 Summary:	A radial context menu for Mozilla
-Summary(pl.UTF-8):   Menu kontekstowe dla mozilli
+Summary(pl.UTF-8):	Menu kontekstowe dla mozilli
 %define		_realname	radialcontext
 Name:		mozilla-addon-%{_realname}
 Version:	1.0
