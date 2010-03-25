@@ -1,6 +1,6 @@
+%define		_realname	radialcontext
 Summary:	A radial context menu for Mozilla
 Summary(pl.UTF-8):	Menu kontekstowe dla mozilli
-%define		_realname	radialcontext
 Name:		mozilla-addon-%{_realname}
 Version:	1.0
 Release:	3
@@ -21,11 +21,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_chromedir	%{_datadir}/mozilla/chrome
 
 %description
-The RadialContext menu is a hierarchical, context-sensitive pie
-menu for Mozilla. It offers an alternative to both the normal
-context menu and mouse gestures. The feeling is very similar to
-mouse gestures. But there also is a GUI so you don't have to look
-up what options are available in the given context.
+The RadialContext menu is a hierarchical, context-sensitive pie menu
+for Mozilla. It offers an alternative to both the normal context menu
+and mouse gestures. The feeling is very similar to mouse gestures. But
+there also is a GUI so you don't have to look up what options are
+available in the given context.
 
 %description -l pl.UTF-8
 RadialContext stanowi hierarchiczne, zależne od kontekstu okrągłe menu
@@ -52,10 +52,12 @@ install %{_realname}.jar $RPM_BUILD_ROOT%{_chromedir}
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%{_sbindir}/mozilla-chrome+xpcom-generate
+if [ "$1" = 1 ]; then
+	%{_sbindir}/mozilla-chrome+xpcom-generate
+fi
 
 %postun
-%{_sbindir}/mozilla-chrome+xpcom-generate
+[ ! -x %{_sbindir}/mozilla-chrome+xpcom-generate ] || %{_sbindir}/mozilla-chrome+xpcom-generate
 
 %files
 %defattr(644,root,root,755)
